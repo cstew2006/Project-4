@@ -48,7 +48,7 @@ class Phrase
             return false;
         }
         }
-    public function getLost(){        
+    public function numberLost(){        
             return count(array_diff($this->selected, $this->getLetterArray()));
         }
     }
