@@ -12,5 +12,5 @@ $thegoodstuff=[
 //Choosing random phrases
 function thegoodstuffRandomizer(){
     global $thegoodstuff;
-    return $thegoodstuff[rand(0,11)];
+    return $thegoodstuff[rand(0,count($thegoodstuff) - 1)];
 }
