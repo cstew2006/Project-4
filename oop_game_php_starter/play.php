@@ -6,7 +6,6 @@ if(isset($_POST['start'])) {
 }
 include "inc/Game.php";
 include "inc/Phrase.php";
-//$_SESSION[selected]=array();
 if (isset($_SESSION['selected']) && isset($_POST['key'])) {
     $_SESSION['selected'][] = $_POST['key'];
 } else {
@@ -29,7 +28,7 @@ $game = new Game($phrase);
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   </head>
 
-  <body style="background: black">
+  <body style="background: orange">
 <div class="main-container">
 <h3 class="header" style="color: blue">Phrase Hunter: <br> Awwwww Here it Goes!!</h3>
 <?php
