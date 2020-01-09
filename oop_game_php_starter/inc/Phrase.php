@@ -18,7 +18,8 @@ class Phrase
             $this->selected = $selected;
     }
     }
-
+    
+    //displays the letters in the phrase
     public function addPhraseToDisplay(){
     
         $characters = str_split(strtolower($this->currentPhrase));
