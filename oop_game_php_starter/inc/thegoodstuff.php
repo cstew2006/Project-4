@@ -1,4 +1,5 @@
 <?php
+//some of my favorite quotes from animes, movies, comics, and wrestling
 $thegoodstuff=[
     'Autobots lets roll out',
     'Thank You Goku',
