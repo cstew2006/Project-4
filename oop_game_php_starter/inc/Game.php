@@ -52,6 +52,8 @@ class Game
         $keyboard.='</form>';
         return $keyboard;
     }
+    
+   //This is for seeing if you have picked too many incorrect letters.
     public function checkForLose(){
   
         if ($this->phrase->numberLost() == $this->lives) {
@@ -60,6 +62,8 @@ class Game
         return false;
         }
     }
+    
+    //This is for seeing if you have picked all of the letters.
     public function checkForWin(){
         if (count(array_intersect($this->phrase->selected, $this->phrase->getLetterArray())) == count($this->phrase->getLetterArray())) {
             return true;
@@ -67,7 +71,8 @@ class Game
             return false;
           }
     } 
-                
+    
+    //displays if you have won or lost
     public function gameOver(){
         if ($this->checkForLose() == true) {
             return '<h1>The phrase was: "' . $this->phrase->currentPhrase . '". Train your mind some more and try again!</h1>
